@@ -1,0 +1,29 @@
+header {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    height: 80px;
+
+    .header-top {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: $header_secondary_color;
+
+        h3 {
+            font-size: 14px;
+            padding: 10px 0;
+        }
+    }
+
+    .header-bottom {
+        background-color: $header_primary_color;
+        color: #ffffff;
+
+        a {
+            font-size: 16px;
+            color: #ffffff;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

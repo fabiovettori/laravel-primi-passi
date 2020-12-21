@@ -15,24 +15,48 @@
         <script src="{{ asset('js/app.js') }}" charset="utf-8"></script>
     </head>
     <body>
-        <main>
-            <div class="container-lg">
-                <div class="row text-center">
-                    <div class="col-lg-12">
-                        <h1>Homepage</h1>
-                    </div>
+        <header>
 
-                    <div class="col-lg-12">
-                        <h3>Ciao {{ $name }}</h3>
-                    </div>
-                    <div class="col-lg-6">
-                        <h1>col-lg-6</h1>
-                    </div>
-                    <div class="col-lg-6">
-                        <h1>col-lg-6</h1>
+            <div class="header-top px-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 d-flex justify-content-start align-items-center">
+                            <h3 class="my-0">Ciao {{ $name }}! </h3>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="header-bottom px-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3><a href="{{ route('home') }}">Home</a</h3>
+                        </div>
+
+                        <div class="col-lg-9 d-flex justify-content-between align-items-center">
+                            <h3><a href="{{ route('products') }}">Products</a></h3>
+                            <h3><a href="{{ route('about') }}">About us</a></h3>
+                            <h3><a href="{{ route('contacts') }}">Contacts</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <main class="p-5">
+            <h3>Articles</h3>
+                @foreach ($articles as $article)
+
+                    @if ($loop->last)
+                        <a class="text-capitalize py-2" href="#">  {{  $article }} </a>
+                        <span class="font-weight-bold">(NEW!)</span>
+
+                    @else
+                        <a class="d-block text-capitalize py-2" href="#">  {{  $article }} </a>
+                    @endif
+                @endforeach
         </main>
     </body>
 </html>

@@ -30219,12 +30219,6 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 $(document).ready(function () {
-  if ($('title').attr('title-page') == 'contacts') {
-    alert('this is a contacts page');
-  }
-
-  ;
-
   if ($('title').attr('title-page') == 'home') {
     alert('this is a home page');
   }

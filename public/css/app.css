@@ -10909,10 +10909,46 @@ a.text-dark:focus {
   box-sizing: border-box;
 }
 
-main {
+header {
   font-family: "Roboto", sans-serif;
-  background-color: lightblue;
-  padding: 50px;
-  height: 100vh;
+  padding: 10px;
+  height: 80px;
+}
+
+header .header-top {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+header .header-top h3 {
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+header .header-bottom {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+header .header-bottom a {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+header .header-bottom a:hover {
+  text-decoration: none;
+}
+
+main a {
+  color: #000000;
+}
+
+main a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+main span {
+  font-size: 12px;
 }
 

@@ -1,6 +1,14 @@
 main {
-    font-family: 'Roboto', sans-serif;
-    background-color: $main_primary_color;
-    padding: 50px;
-    height: 100vh;
+    a {
+        color: #000000;
+
+        &:hover {
+            text-decoration: none;
+            color: green;
+        }
+    }
+
+    span {
+        font-size: 12px;
+    }
 }
